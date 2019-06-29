@@ -1,0 +1,14 @@
+{
+  "name": "RefRepo",
+  "version": "1.0.0",
+  "description": "A simple web app for users to store and view their reperences in a repository to help them as they apply for jobs. Also has fields that help guide users to make stronger connections with their existing and new connections.",
+  "main": "server.js",
+  "repository": "https://github.com/david-kraft/RefRepo.git",
+  "author": "David Kraft <dk@dkraft.net>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.1",
+    "morgan": "^1.9.1"
+  }
+}

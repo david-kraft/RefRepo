@@ -74,3 +74,8 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+# Mac & Windows files
+.DS_Store
+Thumbs.db
+Desktop.ini
