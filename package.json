@@ -1,8 +1,17 @@
 {
-  "name": "RefRepo",
+  "name": "refrepo",
   "version": "1.0.0",
   "description": "A simple web app for users to store and view their reperences in a repository to help them as they apply for jobs. Also has fields that help guide users to make stronger connections with their existing and new connections.",
   "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && yarn run start:prod || yarn run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn run client\"",
+    "client": "cd client && yarn run start",
+    "install": "cd client && yarn",
+    "build": "cd client && yarn run build",
+    "heroku-postbuild": "yarn run build"
+  },
   "repository": "https://github.com/david-kraft/RefRepo.git",
   "author": "David Kraft <dk@dkraft.net>",
   "license": "MIT",

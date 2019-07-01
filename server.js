@@ -1,7 +1,7 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 // Initialize Express
 const app = express();
@@ -20,6 +20,4 @@ app.use(express.static("public"));
 mongoose.connect("mongodb://localhost/sampledatabase", { useNewUrlParser: true });
 
 // Start the server
-app.listen(PORT, function () {
-    console.log("App running on port " + PORT + "!");
-});
+app.listen(PORT, () => console.log("App running on port " + PORT + "!"));
